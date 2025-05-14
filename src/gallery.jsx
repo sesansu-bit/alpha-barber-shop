@@ -15,7 +15,7 @@ const Gallery = () => {
 
   <div className={styles["gallerycontentcover"]}>
   <div className={styles["galaryimage"]}>
-    <img src="./public/gallery1.jpg"/>
+    <img src="/gallery1.jpg"/>
     <div className={styles["galaryshadow1"]}>
     <div className={styles["border1"]}>
     "Get the perfect look with our expert haircutting services. From trendy fades to timeless styles, also our  highly skilled barbers craft each cut with more precision and attention to detail."
@@ -26,7 +26,7 @@ const Gallery = () => {
 
 
   <div className={styles["galaryimage"]}>
-      <img src="./public/gallery2.jpg"/>
+      <img src="/gallery2.jpg"/>
   
     <div className={styles["galaryshadow"]}>
     <div className={styles["border"]}>
@@ -35,7 +35,7 @@ const Gallery = () => {
     </div>
     </div>
   <div className={styles["galaryimage"]}>
-       <img src="./public/gallery3.jpg"/>
+       <img src="/gallery3.jpg"/>
    <div className={styles["galaryshadow"]}>
     <div className={styles["border"]}>
         "At Alpha Barber Shop, our dedication to precision and style has earned us the “Best Local Barber Experience” Award 2024. This recognition reflects our passion for delivering grooming services "

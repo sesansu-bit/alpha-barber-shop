@@ -13,7 +13,7 @@ const About = () => {
       </div>  
       <div className={styles["aboutcontentcover"]}>
       <div className={styles["aboutimagecover"]}>
-          <div className={styles["aboutimage"]}><img src="./public/aboutimage.jpg"/></div>
+          <div className={styles["aboutimage"]}><img src="/aboutimage.jpg"/></div>
           </div>
 
           <div className={styles["aboutcontenttext"]}>
