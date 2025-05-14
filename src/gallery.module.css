@@ -1,0 +1,214 @@
+.gallerycover{
+    left: 0;
+    top: 0;
+    height:840px;
+    width:100%;
+    background-color: #000000;
+    padding-top: 2rem;
+    position: relative;
+}
+.gallerytext{
+    height:84px;
+    width:600px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.4rem;
+display: flex;
+justify-content: center;
+font-weight: 600;
+align-items: center;
+-webkit-text-stroke: 1px#f4b3ff;
+font-family: "Orbitron", sans-serif;
+}
+
+.alpha{
+    color:transparent;
+    
+    margin-left: 20px;
+    font-family: "Roboto", sans-serif;
+cursor: pointer;
+}
+
+.line{
+    height:3px;
+    width:90px;
+    margin: 0 auto;
+    background-color: #eadfff;
+    transition: width 0.7s;
+}
+.gallerytitle:hover .line{
+    background: #a41abc ;
+    width:400px;
+
+}
+.gallerycontentcover{
+    top:0;
+    left: 0;
+    margin:0;
+    height:674px;
+    width:100%;
+    background-color: #100a12 ;
+  
+  
+ display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+       position: relative;
+    justify-content: space-around;
+    padding-top: 10rem;
+  
+    }
+    .galaryimage {
+        cursor: pointer;
+        transition: all 0.3s;
+        height: 300px;
+        width: 400px;
+        border-radius: 10px;
+        box-shadow: inset 0 0 20px black, inset 0 0 20px black;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .galaryimage img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        z-index: 1;
+        position: relative;
+
+      }
+      
+      .galaryshadow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.584); /* transparent black */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fdf2f2d7;
+        font-size: 20px;
+       opacity: 0;
+        border-radius: 10px;
+        transition: all 0.4s;
+      }
+      .galaryshadow1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.584); /* transparent black */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fdf2f2d7;
+        font-size: 20px;
+        border-radius: 10px;
+        transition: all 0.4s;
+      }
+      .border{
+  height:75%;
+  width:80%;
+  border:1px solid #f0b4fc;
+  border-radius: 10px;
+padding:1rem 1rem 1rem 1rem;
+font-family: "Orbitron", sans-serif;
+font-family: "Open Sans", sans-serif;
+
+
+
+      }
+         .border1{
+  height:75%;
+  width:80%;
+  border:1px solid #f0b4fc;
+  border-radius: 10px;
+padding:1rem 1rem 1rem 1rem;
+font-family: "Orbitron", sans-serif;
+font-family: "Open Sans", sans-serif;
+
+
+
+      }
+      
+      /* Hover effect */
+      .galaryimage:hover .galaryshadow {
+        opacity: 1;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+      }
+      .galaryimage:hover  .galaryimage img{
+       
+        filter: blur(10px);
+
+      }
+@media (max-width: 1000px) {
+  .gallerycover{
+    height:990px;
+    width:100%;
+    padding-top: 0;
+  }
+
+   .gallerycontentcover{
+    top:0;
+    left: 0;
+    margin:0;
+    height:774px;
+    width:100%;
+    background-color: #100a12 ;
+ display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+       position: relative;
+    justify-content: space-around;
+    padding-top: 4rem;
+    }
+    
+        .galaryimage {
+        cursor: pointer;
+        transition: all 0.3s;
+        height: 250px;
+        width: 350px;
+        border-radius: 10px;
+        box-shadow: inset 0 0 20px black, inset 0 0 20px black;
+        position: relative;
+        overflow: hidden;
+        margin-left: 3rem;
+        margin-top:2rem;
+        
+      }
+ .galaryshadow{
+   font-size: 15px;
+     }
+  .galaryshadow2{
+      font-size: 15px;
+          }
+          .border1{
+
+      font-size: 15px;
+
+      }
+}
+@media (max-width: 795px) {
+   .gallerycontentcover{
+        height:1074px;
+
+   }
+  .gallerycover{
+    height:1200px;
+
+  }
+          .galaryimage {
+                    margin-top:2rem;
+
+          }
+
+}

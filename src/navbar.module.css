@@ -1,0 +1,218 @@
+.navtop {
+  top: 0;
+  left: 0;
+  height: 55px;
+  width: 100%;
+  position: fixed;
+  background-color: #782d85;
+  justify-content: center;
+  display: flex;
+  padding-top: 10px;
+  cursor: pointer;
+  z-index: 3;
+  color: aliceblue;
+  transition: all 0.2s ease; /* Smooth transition */
+}
+
+.navcover {
+  top: 0;
+  left: 0;
+  margin-top: 53px;
+  height: 76px;
+  width: 100%;
+  background-color: #000000b5;
+  display: flex;
+  position: fixed;
+  z-index: 3;
+  justify-content: center;
+  border-bottom: 1px solid rgb(83, 61, 64);
+  transition: all 0.2s ease; /* Smooth transition */
+}
+
+.navinner {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  padding-right: 15px;
+  margin-left: 5%;
+  transition: all 0.2s ease; /* Smooth transition */
+}
+
+.logo {
+  font-size: 1.5rem;
+  transition: all 0.2s ease; /* Smooth transition */
+}
+
+.alpha {
+  width: 8rem;
+  top: 0%;
+  font-size: 2.4rem;
+  color: transparent;
+  background: linear-gradient(180deg, #ece1ff 49%, #c24dd2 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  transition: all 0.2s ease; /* Smooth transition */
+}
+
+.barber {
+  font-size: 0.8rem;
+  color: #e0cdff;
+  top: 0;
+  margin-top: 47.5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  position: absolute;
+  transition: all 0.2s ease; /* Smooth transition */
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin-left: 10%;
+  transition: all 0.2s ease; /* Smooth transition */
+}
+
+.menu li {
+  color: #e0cdff;
+  transition: all 0.3s;
+}
+
+.menu li a {
+  color: #e0cdff;
+  text-decoration: none;
+  transition: all 0.2s ease; /* Smooth transition */
+}
+
+.menu li:hover a {
+  color: transparent;
+  background: linear-gradient(180deg, #d7c1ff 59%, #c24dd2 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  cursor: pointer;
+}
+
+.menu2 {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin-left: 12%;
+  color: #e0cdff;
+  transition: all 0.2s ease; /* Smooth transition */
+}
+
+.book {
+  color: transparent;
+  cursor: pointer;
+  background-image: linear-gradient(180deg, #c24dd2 37%, #ffffff 69%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #c24dd2;
+  border-radius: 10px;
+  width: 150px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 0px 10px #ffffff;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.book a {
+  color: transparent;
+  text-decoration: none;
+}
+
+.book:hover {
+  background-image: linear-gradient(180deg, #ffffff 37%, #c24dd2 69%);
+  box-shadow: inset 0px 0px 10px #c24dd2;
+  border: 1px solid #c24dd2;
+  transition: all 0.2s ease; /* Smooth transition */
+}
+
+.book:hover a {
+  color: transparent;
+}
+
+.mobileIcon {
+  display: none;
+  color: #fad1ff;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: auto;
+  padding-right: 15px;
+  transition: all 0.2s ease; /* Smooth transition */
+}
+
+.mobileMenu {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 125px;
+  width: 100%;
+  padding: 20px;
+  list-style: none;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  transition: all 0.4s ease; /* Smooth transition */
+}
+
+/* ✅ Mobile menu links style fix */
+.mobileMenu li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.2s ease; /* Smooth transition */
+}
+
+.mobileMenu li a:hover {
+  color: #ffb4ff;
+  transition: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 919px) {
+  .alpha {
+    margin-left: 5%;
+    transition: all 0.2s ease; /* Smooth transition */
+  }
+}
+
+@media (max-width: 1018px) {
+  .menu,
+  .menu2 {
+    display: none;
+    transition: all 0.2s ease; /* Smooth transition */
+  }
+
+  .mobileIcon {
+    display: block;
+    transition: all 0.2s ease; /* Smooth transition */
+  }
+}
+
+@media (max-width: 768px) {
+  .navcover {
+    padding: 0 15px;
+    transition: all 0.2s ease; /* Smooth transition */
+  }
+
+  .navInner {
+    max-width: 100%;
+    transition: all 0.2s ease; /* Smooth transition */
+  }
+
+  .navInner .menu {
+    display: none;
+    transition: all 0.2s ease; /* Smooth transition */
+  }
+}

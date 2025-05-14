@@ -1,0 +1,208 @@
+.servicecover {
+    left: 0;
+    top: 0;
+    height: 840px;
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.servicetext {
+    height: 84px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Orbitron", sans-serif;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    align-items: center;
+    -webkit-text-stroke: 1px #a41abc;
+    transition: all 0.2s ease-in-out;
+}
+
+.alpha {
+    color: transparent;
+    background: linear-gradient(180deg, rgba(227, 212, 255, 1) 60%, rgba(164, 26, 188, 1) 59%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-left: 20px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.line {
+    height: 3px;
+    width: 90px;
+    margin: 0 auto;
+    background-color: #eadfff;
+    transition: width 0.7s, background-color 0.2s ease-in-out;
+}
+
+.servicetitle:hover .line {
+    background: #a41abc;
+    width: 400px;
+}
+
+.servicecontentcover {
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 674px;
+    width: 100%;
+    background-color: rgba(3, 0, 8, 0.67);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    position: relative;
+    justify-content: space-around;
+    padding-top: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+/* === Shared Transitions for Service Boxes === */
+.service1,
+.service2 {
+    height: 500px;
+    width: 350px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(236, 129, 255) 47%, rgba(30, 18, 48, 0.682) 47%);
+    transition: all 0.2s ease-in-out;
+}
+
+.service2 {
+    background: linear-gradient(180deg, rgb(247, 202, 255) 47%, rgba(30, 18, 48, 0.682) 47%);
+}
+
+.serviceimage {
+    height: 40%;
+    width: 90%;
+    margin: 1rem 1rem 1rem;
+    border-radius: 10px;
+    box-shadow: inset 10px 0 0 10px #a41abc;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.serviceimage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.servicedetails,
+.servicedetails2 {
+    height: 54%;
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #1b132a16 0%, rgba(255, 252, 252, 0) 94%);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.servicedetails {
+    box-shadow: inset 0 0 10px #e865ff;
+    border-left: 1px solid #a41abc;
+    border-bottom: 1px solid #a41abc;
+}
+
+.servicedetails2 {
+    box-shadow: inset 0 0 10px #f9d5ff;
+    border-left: 1px solid #f9d5ff;
+    border-bottom: 1px solid #f9d5ff;
+}
+
+.servicetype,
+.servicetype2 {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
+    margin-top: 2.3rem;
+    border-bottom: 1px solid #e22cfa;
+    transition: all 0.2s ease-in-out;
+}
+
+.servicetype {
+    color: transparent;
+    background: linear-gradient(180deg, #e8dbff 52%, #e22cfa 52%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.servicetype2 {
+    color: #f6b1ff;
+    border-bottom: 1px solid #e8dbff;
+}
+
+.serviceabout {
+    height: 180px;
+    width: 90%;
+    color: #ffffff;
+    padding: 0.5rem 1rem 1rem 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.service1:hover .servicedetails,
+.service2:hover .servicedetails2 {
+    box-shadow: inset 0 0 10px #f19fff;
+    background: linear-gradient(145deg, #00000015 0%, rgba(255, 252, 252, 0) 94%);
+}
+
+.service1:hover .serviceimage img,
+.service2:hover .serviceimage img {
+    transform: scale(1.12);
+}
+
+.service2:hover .servicetype2 {
+    color: transparent;
+    background: linear-gradient(180deg, #e8dbff 52%, #e22cfa 52%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    border-bottom: 1px solid #e22cfa;
+}
+
+/* === MEDIA QUERY === */
+@media (max-width: 1000px) {
+    .servicecover {
+        height: 1440px;
+        width: 100%;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .servicecontentcover {
+        top: 0;
+        left: 0;
+        margin: 0;
+        height: 674px;
+        width: 100%;
+        margin-top: 1rem;
+        padding: 0;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .service1,
+    .service2 {
+        height: 500px;
+        width: 300px;
+        border-radius: 10px;
+        margin-top: 6rem;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .service1 {
+        margin-left: 2rem;
+    }
+
+    .service2 {
+        margin-left: 3rem;
+    }
+}
